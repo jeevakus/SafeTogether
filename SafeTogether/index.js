@@ -11,7 +11,7 @@ function stopPredicting(){
 }
 async function app(){
  console.log('Loading model..');
- net= await tf.automl.loadImageClassification('model.json');
+ net= await tf.automl.loadImageClassification('model-export_icn_tf_js-Hands_Test_20210130073643-2021-01-31T03_00_19.340343Z_model.json.json');
  console.log('Successfully loaded model');
  
  const webcam = await tf.data.webcam(webcamElement);
